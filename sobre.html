@@ -4,201 +4,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <title>AGRINHO 2025</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
   <link rel="stylesheet" href="sobre.css" />
-
-  <style>
-    .botao-musica {
-      position: fixed;
-      bottom: 20px;
-      z-index: 999;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      font-size: 20px;
-      text-align: center;
-      line-height: 45px;
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s;
-    }
-
-    .botao-musica:hover {
-      background-color: #218838;
-    }
-
-    #parar-musica {
-      right: 75px;
-      background-color: #dc3545;
-    }
-
-    #parar-musica:hover {
-      background-color: #c82333;
-    }
-
-    #tocar-musica {
-      right: 20px;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Música de fundo -->
-  <audio id="musicaFundo" autoplay loop>
-    <source src="./assets/image/mp3-audio.fundo.mp3" type="audio/mpeg" />
-    Seu navegador não suporta áudio.
-  </audio>
-  <audio id="clickSound" src="./assets/image/toque.nos.botoes.mp3" preload="auto"></audio>
 
-
-  <!-- Botões para controle de música -->
-  <button id="parar-musica" class="botao-musica" onclick="document.getElementById('musicaFundo').pause()">🔇</button>
-  <button id="tocar-musica" class="botao-musica" onclick="document.getElementById('musicaFundo').play()">🔊</button>
-
-  <!--Apresentação do tema-->
-  <section class="cabecalho">
+  <section class="cabecalho text-center py-4">
     <h1>AGRINHO 2025</h1>
     <h3>Festejando Conexão Campo Cidade</h3>
   </section>
 
   <nav class="navbar navbar-expand-lg bg-success">
-    <div class="container-fluid ">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container-fluid">
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial</a>
+            <a class="nav-link active text-white" href="index.html">Página Inicial</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Primeira seção a ser dividida -->
-  <div class="container text-center">
+  <div class="container text-center py-5">
     <div class="row">
       <div class="col">
-        <h1>Como a zona rural interfere tanto em nossas vidas?</h1>
-        <p class="alinha">A zona rural desempenha um papel fundamental em nossas vidas, sendo a fonte primordial de alimentos e matérias-primas essenciais para a sobrevivência humana. A produção agrícola, que ocorre em vastas extensões de terra, não apenas abastece as cidades com produtos frescos, mas também sustenta a economia local e nacional. Além disso, a zona rural é um importante espaço de preservação ambiental, onde a biodiversidade é mantida e os ecossistemas são protegidos. A conexão entre o campo e a cidade é vital, pois a saúde e o bem-estar dos habitantes urbanos dependem diretamente da qualidade dos alimentos que consomem e dos recursos naturais que utilizam. A agricultura sustentável, por exemplo, promove práticas que respeitam o meio ambiente, garantindo que as futuras gerações também possam usufruir desses recursos. Portanto, é imprescindível valorizar e proteger a zona rural, reconhecendo sua importância não apenas como produtora de bens, mas também como guardiã do meio ambiente. A harmonia entre o rural e o urbano é essencial para um desenvolvimento equilibrado e sustentável, que beneficie a todos, independentemente de onde vivam. A preservação da zona rural é, assim, um investimento no futuro do nosso planeta e na qualidade de vida de todos os seus habitantes.</p>
+        <h1>Como a zona rural interfere em nossas vidas?</h1>
+        <p class="alinha">
+          A zona rural fornece alimentos, matérias-primas e preserva o meio ambiente, sendo essencial para a vida humana e equilíbrio ecológico.
+        </p>
       </div>
+
       <div class="col">
-        <p></p>
-        <img src="./assets/image/trator.png" class="img-card card-img-top" alt="Imagem representativa da zona rural.">
-      </div>
-      <div class="col">
-        <h1>Como fazer para que a zona rural sempre cresça?</h1>
-        <p class="alinha">Para que a zona rural cresça de forma sustentável e eficaz, é fundamental investir em quatro pilares essenciais: educação, tecnologia, infraestrutura e apoio aos produtores. A educação é a base para o desenvolvimento, pois capacita os trabalhadores rurais a adotarem práticas mais eficientes e inovadoras, aumentando a produtividade e a qualidade dos produtos. A tecnologia, por sua vez, traz soluções que podem revolucionar a agricultura, como o uso de sistemas de irrigação inteligentes e técnicas de cultivo que respeitam o meio ambiente. A infraestrutura, incluindo estradas, transporte e acesso à internet, é crucial para que os produtos cheguem ao mercado de forma rápida e eficiente, além de facilitar o acesso a informações e serviços. Por fim, o apoio aos produtores, por meio de políticas públicas e programas de financiamento, é vital para que eles possam investir em suas propriedades e melhorar suas condições de vida. Com esses investimentos, a zona rural não apenas se tornará mais próspera, mas também contribuirá significativamente para a segurança alimentar e o desenvolvimento econômico do país. Assim, ao fortalecer o campo, garantimos um futuro mais equilibrado e sustentável para todos.</p>
+        <h1>Como fazer a zona rural crescer?</h1>
+        <p class="alinha">
+          Investir em educação, tecnologia, infraestrutura e apoio ao produtor é essencial para o desenvolvimento sustentável do campo.
+        </p>
       </div>
     </div>
   </div>
 
-  <div class="container text-center">
+  <div class="container text-center py-5">
     <div class="row">
       <div class="col">
-        <img src="./assets/image/aminho.girasol.png" class="img-card card-img-top" alt="Imagem de plantação sustentável.">
-      </div>
-      <div class="col">
-        <h1>Como a zona rural interfere na industrialização?</h1>
-        <p class="alinha">A zona rural é um pilar fundamental para a industrialização, pois fornece as matérias-primas indispensáveis que as fábricas necessitam para a produção de uma ampla gama de produtos. Desde alimentos até insumos industriais, a agricultura e a pecuária desempenham um papel crucial na cadeia produtiva. Sem a produção rural, a indústria enfrentaria sérias dificuldades para abastecer o mercado, resultando em escassez de produtos e aumento de preços. Além disso, a relação entre a zona rural e a indústria é simbiótica: enquanto o campo fornece os recursos, a industrialização agrega valor a esses insumos, transformando-os em produtos acabados que atendem às necessidades da população. Essa interação não apenas impulsiona a economia, mas também gera empregos tanto no campo quanto nas cidades, promovendo um desenvolvimento regional equilibrado. Portanto, é essencial reconhecer a importância da zona rural na industrialização e investir em práticas que fortaleçam essa conexão. A valorização da produção rural, aliada a inovações tecnológicas e a políticas de apoio, pode garantir um fluxo contínuo de matérias-primas, sustentando o crescimento industrial e contribuindo para a prosperidade econômica do país. Assim, a integração entre o rural e o urbano se torna um fator chave para um futuro mais próspero e sustentável.</p>
-      </div>
-      <div class="col">
-        <img src="./assets/image/araucaria.png" class="img-card card-img-top" alt="Imagem de energia sustentável.">
+        <h1>Relação com a industrialização</h1>
+        <p class="alinha">
+          A zona rural fornece matérias-primas que sustentam a indústria e impulsionam a economia.
+        </p>
       </div>
     </div>
   </div>
 
-  <!-- Seção de Perguntas Frequentes -->
+  <!-- FAQ com cards interativos (JS vai controlar) -->
   <div class="container py-5">
     <h2 class="text-center mb-4">Perguntas Frequentes</h2>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Por que a zona rural é importante para a cidade?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            A zona rural fornece alimentos, matérias-primas e contribui para a preservação do meio ambiente, sendo essencial para a qualidade de vida urbana e o equilíbrio ecológico.
-          </div>
-        </div>
-      </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Como a tecnologia ajuda no desenvolvimento rural?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            A tecnologia moderniza a produção, reduz custos, aumenta a produtividade e contribui para a sustentabilidade no campo por meio de inovações como agricultura de precisão e irrigação automatizada.
-          </div>
-        </div>
-      </div>
+    <div class="card p-3 mb-3 faq-item">
+      <h5>Por que a zona rural é importante?</h5>
+      <p class="resposta" style="display:none;">
+        Porque fornece alimentos e recursos essenciais para a sociedade.
+      </p>
+    </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Quais são os principais desafios enfrentados pela zona rural?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Os principais desafios incluem falta de acesso a serviços básicos, êxodo rural, dificuldades de transporte, falta de crédito e conectividade digital limitada.
-          </div>
-        </div>
-      </div>
+    <div class="card p-3 mb-3 faq-item">
+      <h5>Como a tecnologia ajuda no campo?</h5>
+      <p class="resposta" style="display:none;">
+        Aumenta a produtividade e reduz desperdícios.
+      </p>
+    </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            O que é agricultura sustentável?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Agricultura sustentável é um conjunto de práticas que busca produzir alimentos de forma responsável, conservando recursos naturais e garantindo a viabilidade econômica e social das comunidades rurais.
-          </div>
-        </div>
-      </div>
+    <div class="card p-3 mb-3 faq-item">
+      <h5>O que é agricultura sustentável?</h5>
+      <p class="resposta" style="display:none;">
+        Produção de alimentos respeitando o meio ambiente.
+      </p>
     </div>
   </div>
 
-  <!-- Rodapé -->
-  <div class="footer">
-    <p>Todos os direitos reservados para Agrinho 2025 - Festejando a Conexão Campo Cidade.</p>
+  <div class="footer text-center py-3">
+    <p>Todos os direitos reservados - Agrinho 2025</p>
   </div>
-  <script>
-    // Pega todos os botões do site
-    document.querySelectorAll('button, a.btn, input[type="submit"]').forEach(el => {
-      el.addEventListener('click', () => {
-        const clickSound = document.getElementById('clickSound');
-        if (clickSound) {
-          clickSound.currentTime = 0; // Recomeça o som do início
-          clickSound.play();
-        }
-      });
-    });
-  </script>
-</body>
 
-</html>    
+  <!-- JS separado -->
+  <script src="sobre.js"></script>
+
+</body>
+</html>
