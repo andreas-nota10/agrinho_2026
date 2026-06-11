@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produção no Meio Rural - Agrinho 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="producao.css" />
+  <style>
+    .btn-audio {
+      position: fixed;
+      bottom: 20px;
+      z-index: 9999;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 22px;
+      border: none;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    #botao-tocar { right: 20px; background-color: #28a745; }
+    #botao-pausar { right: 80px; background-color: #dc3545; }
+    .btn-audio:hover { filter: brightness(0.9); }
+
+    /* Cards interativos */
+    .curiosidade-card {
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    .curiosidade-card .resposta {
+      display: none;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #f8f9fa;
+      border-left: 3px solid #28a745;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .curiosidade-card.show .resposta { display: block; }
+  </style>
+</head>
+
+<body>
+  <!-- Música de fundo -->
+  <audio id="musicaFundo" autoplay loop>
+    <source src="./assets/image/mp3-audio.fundo.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio.
+  </audio>
+  <audio id="clickSound" src="./assets/image/toque.nos.botoes.mp3" preload="auto"></audio>
+
+  <!-- Botões de controle de áudio -->
+  <button id="botao-pausar" class="btn-audio">🔇</button>
+  <button id="botao-tocar" class="btn-audio">🔊</button>
+
+  <!--Apresentação do tema-->
+  <section class="cabecalho text-center my-4">
+    <h1>AGRINHO 2025</h1>
+    <h3>Festejando Conexão Campo Cidade</h3>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active text-white" href="index.html">Página Inicial |</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="energia.html">Energia Rural |</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="producao.html">Produção</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container card-text my-5">
+    <div class="row">
+      <div class="col">
+        <h1>Produção no meio rural</h1>
+        <p>A produção no meio rural é uma das bases fundamentais da economia brasileira...</p>
+        <!-- Conteúdo textual mantido aqui -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Curiosidades interativas -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">🔍 Curiosidades sobre a Produção Rural</h2>
+
+    <div class="curiosidade-card card p-3">
+      <strong>🌾 Qual é o maior produtor mundial de soja?</strong>
+      <div class="resposta">O Brasil é o segundo maior produtor mundial, atrás apenas dos Estados Unidos.</div>
+    </div>
+
+    <div class="curiosidade-card card p-3">
+      <strong>🐄 Quantos litros de leite uma vaca pode produzir por dia?</strong>
+      <div class="resposta">Uma vaca leiteira pode produzir até 30 litros de leite diariamente, dependendo da raça e da alimentação.</div>
+    </div>
+
+    <div class="curiosidade-card card p-3">
+      <strong>🚜 Como a mecanização impactou a produção rural?</strong>
+      <div class="resposta">A mecanização aumentou a produtividade, reduzindo o tempo e o esforço necessários para o cultivo e colheita.</div>
+    </div>
+
+    <div class="curiosidade-card card p-3">
+      <strong>🌱 O que é agricultura familiar?</strong>
+      <div class="resposta">São propriedades menores, geralmente trabalhadas pela própria família, que garantem grande parte da produção de alimentos básicos no Brasil.</div>
+    </div>
+
+    <div class="curiosidade-card card p-3">
+      <strong>🌍 Como a agricultura sustentável ajuda o meio ambiente?</strong>
+      <div class="resposta">Ela promove o uso racional dos recursos naturais, reduz o uso de agrotóxicos e protege a biodiversidade local.</div>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-white text-center py-3">
+    <p>Todos os direitos reservados para Agrinho 2025 - Festejando a Conexão Campo Cidade.</p>
+  </footer>
+
+  <!-- JS externo -->
+  <script src="producao.js"></script>
+</body>
+
+</html>
